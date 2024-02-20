@@ -1,6 +1,6 @@
 Hi My name is TomLiu
 🌍  I'm based in Toronto
-✉️  You can contact me at lawrence.rs.lin@gmail.com
+✉️  You can contact me at ears53589793@gmail.com
 🧠  I'm learning full stack ML development
 Skills
 PythonJavarlangJavaScriptCReactMySQLNodeJSPyTorchTensorFlowDjango
