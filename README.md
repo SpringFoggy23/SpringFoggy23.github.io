@@ -1,6 +1,31 @@
-Hi My name is TomLiu
-🌍  I'm based in Guangzhou
-✉️  You can contact me at ears53589793@gmail.com
-🧠  I'm learning full stack ML development
-Skills
-Python Javar C MySQL PyTorch TensorFlow Django
+# 👋 Hi, I'm ZishuoLiu!
+
+🌍 I'm based in Guangzhou,GuangDong 
+✉️ You can contact me at zsliu@bu.edu  
+🧠 I'm currently diving deep into **Full Stack ML Development**
+
+---
+
+### 🚀 Skills & Technologies
+
+- **Languages**: Python, Java, C  
+- **Databases**: MySQL  
+- **Frameworks & Libraries**: Django, PyTorch, TensorFlow  
+- **Dev Tools**: Git, Docker, VSCode  
+- **Cloud & Deployment**: Kubernets, AWS, Docker
+
+---
+
+### 📌 What I'm working on
+- Building scalable ML pipelines for real-time data
+- Exploring the intersection of backend engineering and AI systems
+- Contributing to open-source projects related to ML and DevOps
+
+---
+
+### 📫 Let's Connect
+- 💼 [LinkedIn](https://linkedin.com/in/zsliu)
+- 💻 [Portfolio](https://SpringFoggy23.github.io/)
+
+Thanks for stopping by! 😊
+
