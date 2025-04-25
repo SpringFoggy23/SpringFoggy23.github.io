@@ -78,10 +78,7 @@ ul li {
 
   .sidebar {
     width: 100%; /* Make sidebar take full width on mobile */
-    position: fixed;          /* Fixes it to the top */
-    top: 0;
-    left: 0;
-    z-index: 999;
+    position: relative;          /* Fixes it to the top */
     background-color: #f9f9f9;
     padding: 20px;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
@@ -90,7 +87,6 @@ ul li {
   .content {
     width: 100%; /* Ensure content takes full width */
     padding: 20px;
-    margin-top: 100px;  /* Add space to avoid overlap with fixed sidebar */
   }
 
   h1 {
