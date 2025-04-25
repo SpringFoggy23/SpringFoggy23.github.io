@@ -18,6 +18,7 @@ body {
 .sidebar {
   width: 260px;
   padding-right: 30px;
+  position: fixed;
 }
 
 .sidebar h1 {
