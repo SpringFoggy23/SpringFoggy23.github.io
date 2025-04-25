@@ -18,7 +18,10 @@ body {
 .sidebar {
   width: 260px;
   padding-right: 30px;
-  position: fixed;
+  max-height: 100vh;
+  overflow-y: auto;
+  position: sticky;
+  top: 0;
 }
 
 .sidebar h1 {
