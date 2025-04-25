@@ -1,7 +1,5 @@
 /* Base reset */
 body, html {
-  margin: 0;
-  padding: 0;
   height: 100%;
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   background: #f9f9f9;
@@ -38,9 +36,12 @@ body, html {
 
 /* Main content */
 .content {
-  margin-left: 300px;
+  margin-left: 300px;           /* Keep space for sidebar */
   padding: 40px;
-  flex-grow: 1;
+  max-width: 800px;             /* Set a readable width */
+  margin-right: auto;
+  margin-top: 0;
+  margin-bottom: 0;
 }
 
 h1 {
