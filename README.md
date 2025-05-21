@@ -24,7 +24,7 @@
 ---
 
 ### 📫 Let's Connect
-- 💼 [LinkedIn]([https://www.linkedin.com/in/zishuo-liu-2726b2301/])
+- 💼 [LinkedIn](https://www.linkedin.com/in/zishuo-liu-2726b2301/)
 - 💻 [Portfolio](https://SpringFoggy23.github.io/cv.html)
 
 Thanks for stopping by! 😊
