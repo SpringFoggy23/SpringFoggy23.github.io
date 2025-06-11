@@ -47,6 +47,22 @@ body, html {
   text-decoration: underline;
 }
 
+
+.social-icons {
+  margin-top: 10px;
+}
+
+.social-icons a {
+  color: #007acc;
+  text-decoration: none;
+  font-size: 1.4em;
+  margin-right: 12px;
+}
+
+.social-icons a:hover {
+  color: #005f99;
+}
+
 /* Content section on the right */
 .content {
   flex: 1;
