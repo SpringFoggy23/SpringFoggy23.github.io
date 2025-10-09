@@ -41,6 +41,12 @@ audio {
   text-decoration: none;
 }
 
+
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
 /* Dropdown button */
 .dropbtn {
   background-color: #007acc;
