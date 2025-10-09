@@ -90,7 +90,7 @@ audio {
   display: flex;
   max-width: 1000px;
   margin: 0 auto; /* CENTERED */
-  padding: 40px 20px;
+  padding: 100px 40px 20px;
   flex-wrap: wrap; 
 }
 
