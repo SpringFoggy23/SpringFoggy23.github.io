@@ -29,12 +29,30 @@
 
       <!--Display control on here -->
       <audio controls>
-        <source src="music/Spring.mp3" type="audio/mpeg">
+        <source src="Music/Spring.mp3" type="audio/mpeg">
         Your browser does not support the audio element.
       </audio>
 
       <p>Feel free to listen while reading and thinking:)</p>
     </div>
   </div>
+
+  <script>
+  // 点击 Menu 切换下拉显示
+  document.addEventListener('DOMContentLoaded', function() {
+    const dropdown = document.querySelector('.dropdown');
+    const button = dropdown.querySelector('.dropbtn');
+
+    button.addEventListener('click', function(e) {
+      e.stopPropagation();
+      dropdown.classList.toggle('active');
+    });
+
+    // 点击页面其他区域时关闭菜单
+    document.addEventListener('click', function() {
+      dropdown.classList.remove('active');
+    });
+  });
+</script>
 </body>
 </html>
