@@ -37,10 +37,16 @@ audio {
 .nav-logo {
   font-size: 1.3em;
   font-weight: bold;
-  color: white;
+  color: purple;
   text-decoration: none;
+  display: flex;
+  align-items: center;
+  gap: 8px; 
 }
 
+.nav-logo i {
+  color: purple; 
+}
 
 .dropdown {
   position: relative;
