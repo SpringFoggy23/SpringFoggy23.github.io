@@ -153,6 +153,32 @@ audio {
   color: #005f99;
 }
 
+/* Tool icons inside paragraph */
+.tool-icon {
+  font-size: 1.3em;
+  color: #007acc;
+  margin: 0 6px;
+}
+
+/* Project link icons (GitHub, Globe, Email) */
+.project-icons {
+  margin-top: 15px;
+  display: flex;
+  justify-content: center;
+  gap: 30px;              /* space between icons */
+}
+
+.project-icons a {
+  color: #007acc;
+  font-size: 2em;         /* larger icons */
+  transition: color 0.2s, transform 0.2s;
+}
+
+.project-icons a:hover {
+  color: #005f99;
+  transform: scale(1.2);
+}
+
 /* Content section on the right */
 .content {
   flex: 1;
@@ -178,8 +204,8 @@ h1 {
 }
 
 .project-gallery img {
-  width: 48%;
-  height: 250px;             
+  width: 1 1 48%;
+  height: 300px;             
   object-fit: cover;           
   border-radius: 8px;
   box-shadow: 0 2px 6px rgba(0, 0, 0, 0.15);
