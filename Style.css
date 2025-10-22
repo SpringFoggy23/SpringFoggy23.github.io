@@ -247,10 +247,27 @@ ul li {
 /* Mobile View (below 768px) */
 @media (max-width: 768px) {
 
-  html, body {
-    width: 100%;
-    overflow-x: hidden; 
+  * {
     box-sizing: border-box;
+  }
+
+  html {
+    width: 100%;
+  }
+
+  body {
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    overflow-x: clip; /* ✅ 比 hidden 更好，不裁剪 */
+    background: #f9f9f9;
+    color: #333;
+  }
+
+  img, iframe, audio {
+    max-width: 100%;
+    height: auto;
+    display: block;
   }
 
   .container {
