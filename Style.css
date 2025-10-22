@@ -246,6 +246,13 @@ ul li {
 
 /* Mobile View (below 768px) */
 @media (max-width: 768px) {
+
+  html, body {
+    width: 100%;
+    overflow-x: hidden; 
+    box-sizing: border-box;
+  }
+
   .container {
     flex-direction: column; /* Stack sidebar and content */
     padding: 0;
@@ -253,9 +260,12 @@ ul li {
 
   .navbar-container{
     max-width: 100%;
-    padding: 0 10px;
+    width: 100%;
     margin: 0;
+    padding: 0 8px; 
+    display: flex;
     justify-content: space-between;
+    align-items: center;
   }
 
   .dropbtn{
@@ -294,12 +304,10 @@ ul li {
     height: 200px;
   }
 
-  @media (max-width: 768px) {
   .pdf-viewer {
     height: 80vh;
     max-width: 100%;
     margin: 10px 0;
   }
 
-}
 }
