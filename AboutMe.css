@@ -1,0 +1,163 @@
+/* Reset */
+* { box-sizing: border-box; }
+html, body {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  overflow-x: clip;
+  font-family: 'Segoe UI', Tahoma, sans-serif;
+  background: #f8f8f8;
+  color: #333;
+}
+
+/* Navigation bar */
+.navbar {
+  width: 100%;
+  background: #fff;
+  padding: 10px 0;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+.navbar-container {
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 0 15px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.nav-logo {
+  font-size: 1.6em;
+  text-decoration: none;
+  color: purple;
+}
+
+.dropbtn {
+  background: purple;
+  color: #fff;
+  border: none;
+  padding: 8px 14px;
+  border-radius: 4px;
+}
+
+/* Dropdown */
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background: #fff;
+  border-radius: 6px;
+  box-shadow: 0 3px 6px rgba(0,0,0,0.15);
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+.dropdown-content a {
+  display: block;
+  padding: 10px;
+  color: #333;
+  text-decoration: none;
+}
+.dropdown-content a:hover {
+  background: #f0f0f0;
+}
+
+/* Layout */
+.page-container {
+  max-width: 1100px;
+  margin: 20px auto;
+  display: flex;
+  gap: 30px;
+  padding: 0 20px;
+}
+
+/* Blog area */
+.blog-area {
+  flex: 2;
+}
+
+.blog-area h1 {
+  color: #007acc;
+  margin-bottom: 10px;
+}
+
+.blog-post {
+  background: #fff;
+  padding: 18px;
+  margin-bottom: 20px;
+  border-radius: 10px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+}
+
+.blog-post .date {
+  color: gray;
+  font-size: 0.9em;
+}
+
+/* Music side panel */
+.music-panel {
+  flex: 1;
+  background: #ffffff;
+  padding: 15px;
+  border-radius: 10px;
+  height: fit-content;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+}
+
+.music-panel .audio-item {
+  margin-bottom: 20px;
+}
+
+.music-panel audio {
+  width: 100%;
+  height: 60px;
+  margin-top: 8px;
+}
+
+/* Blog preview truncated section */
+.blog-preview {
+  max-height: 90px;              /* controls how much text is shown */
+  overflow: hidden;
+  position: relative;
+  transition: max-height 0.3s ease;
+}
+
+/* Optional fade-out effect */
+.blog-preview::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  height: 30px;
+  width: 100%;
+  background: linear-gradient(to bottom, transparent, white);
+}
+
+/* Read more button */
+.read-more-btn {
+  margin-top: 10px;
+  background: #007acc;
+  color: white;
+  border: none;
+  padding: 6px 12px;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 0.9em;
+}
+
+.read-more-btn:hover {
+  background: #005fa3;
+}
+
+/* Mobile layout */
+@media (max-width: 768px) {
+  .page-container {
+    flex-direction: column;
+  }
+
+  .music-panel {
+    width: 100%;
+  }
+}
