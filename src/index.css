@@ -1,0 +1,84 @@
+:root {
+  --bg-color: #f9f9f9;
+  --text-color: #333;
+  --secondary-text: #666;
+  --navbar-bg: rgba(255, 255, 255, 0.95);
+  --navbar-shadow: rgba(0, 0, 0, 0.1);
+  --header-border: #ccc;
+  --link-color: #007acc;
+  --link-hover-color: #005f9e;
+  --nav-link-color: #555;
+  --nav-link-hover-bg: rgba(0, 123, 255, 0.05);
+  --nav-link-active: #007bff;
+  --menu-bg: #ffffff;
+  --card-bg: #ffffff;
+  --card-shadow: rgba(0, 0, 0, 0.1);
+  --footer-bg: #f8f9fa;
+  --footer-text: #6c757d;
+  --footer-border: #e7e7e7;
+  --tag-bg: #f0f7ff;
+  --tag-text: #007acc;
+}
+
+[data-theme='dark'] {
+  --bg-color: #121212;
+  --text-color: #e0e0e0;
+  --secondary-text: #adb5bd;
+  --navbar-bg: rgba(18, 18, 18, 0.95);
+  --navbar-shadow: rgba(255, 255, 255, 0.1);
+  --header-border: #444;
+  --link-color: #61dafb;
+  --link-hover-color: #21a1c1;
+  --nav-link-color: #e0e0e0;
+  --nav-link-hover-bg: rgba(255, 255, 255, 0.1);
+  --nav-link-active: #61dafb;
+  --menu-bg: #1e1e1e;
+  --card-bg: #1e1e1e;
+  --card-shadow: rgba(0, 0, 0, 0.3);
+  --footer-bg: #181818;
+  --footer-text: #adb5bd;
+  --footer-border: #333;
+  --tag-bg: #2d2d2d;
+  --tag-text: #61dafb;
+}
+
+body,
+html {
+  margin: 0;
+  padding: 0;
+  font-family: 'Segoe UI', Tahoma, sans-serif;
+  background-color: var(--bg-color);
+  color: var(--text-color);
+  min-height: 100vh;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+ul {
+  padding-left: 20px;
+}
+
+ul li {
+  margin-bottom: 6px;
+}
+
+h1 {
+  font-size: 1.4em;
+  border-bottom: 1px solid var(--header-border);
+  padding-bottom: 5px;
+  margin-top: 40px;
+}
+
+a {
+  color: var(--link-color);
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+a:hover {
+  text-decoration: underline;
+  color: var(--link-hover-color);
+}

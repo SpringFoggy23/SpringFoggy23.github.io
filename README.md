@@ -1,31 +1,16 @@
-# 👋 Hi, I'm ZishuoLiu!
+# React + Vite
 
-🌍 I'm based in Guangzhou,GuangDong 
-✉️ You can contact me at zsliu@bu.edu  
-🧠 I'm currently diving deep into **Full Stack ML Development**
+This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
 
----
+Currently, two official plugins are available:
 
-### 🚀 Skills & Technologies
+- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
+- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
 
-- **Languages**: Python, Java, C  
-- **Databases**: MySQL  
-- **Frameworks & Libraries**: Django, PyTorch, TensorFlow  
-- **Dev Tools**: Git, Docker, VSCode  
-- **Cloud & Deployment**: Kubernets, AWS, Docker
+## React Compiler
 
----
+The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
 
-### 📌 What I'm working on
-- Building scalable ML pipelines for real-time data
-- Exploring the intersection of backend engineering and AI systems
-- Contributing to open-source projects related to ML and DevOps
+## Expanding the ESLint configuration
 
----
-
-### 📫 Let's Connect
-- 💼 [LinkedIn](https://www.linkedin.com/in/zishuo-liu-2726b2301/)
-- 💻 [Portfolio](https://SpringFoggy23.github.io/cv.html)
-
-Thanks for stopping by! 😊
-
+If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.

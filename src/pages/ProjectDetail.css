@@ -1,0 +1,163 @@
+/* ProjectDetail.css */
+.project-detail-container {
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 40px 20px;
+    color: var(--text-color);
+}
+
+.back-link {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    margin-bottom: 20px;
+    font-weight: 500;
+}
+
+.project-header {
+    margin-bottom: 40px;
+    text-align: center;
+}
+
+.project-header h1 {
+    font-size: 2.5rem;
+    margin-bottom: 10px;
+    color: var(--link-color);
+    border-bottom: none;
+}
+
+.subtitle {
+    font-size: 1.2rem;
+    color: var(--secondary-text);
+    margin: 0;
+}
+
+.project-meta {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    margin-top: 20px;
+}
+
+.meta-link {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    color: var(--nav-link-color);
+    font-weight: 500;
+}
+
+.meta-link:hover {
+    color: var(--link-color);
+}
+
+.project-section {
+    margin-bottom: 60px;
+}
+
+.project-section h2 {
+    font-size: 1.8rem;
+    margin-bottom: 20px;
+    border-bottom: 2px solid var(--footer-border);
+    padding-bottom: 10px;
+    color: var(--text-color);
+}
+
+/* Gallery */
+.gallery-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+}
+
+.gallery-grid img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px var(--card-shadow);
+    transition: transform 0.3s ease;
+}
+
+.gallery-grid img:hover {
+    transform: scale(1.02);
+}
+
+/* Stack */
+.stack-grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+}
+
+.stack-badge {
+    background: var(--tag-bg);
+    color: var(--tag-text);
+    padding: 8px 16px;
+    border-radius: 20px;
+    font-weight: 600;
+    font-size: 0.95rem;
+    border: 1px solid var(--footer-border);
+}
+
+/* Timeline */
+.timeline {
+    position: relative;
+    padding-left: 20px;
+    border-left: 3px solid var(--footer-border);
+}
+
+.timeline-item {
+    position: relative;
+    padding-left: 30px;
+    margin-bottom: 30px;
+}
+
+.timeline-item::before {
+    content: '';
+    position: absolute;
+    left: -28px;
+    top: 5px;
+    width: 14px;
+    height: 14px;
+    background: var(--link-color);
+    border-radius: 50%;
+    border: 3px solid var(--card-bg);
+    box-shadow: 0 0 0 2px var(--footer-border);
+}
+
+.timeline-date {
+    font-size: 0.9rem;
+    color: var(--secondary-text);
+    margin-bottom: 5px;
+    font-weight: 600;
+}
+
+.timeline-phase {
+    font-size: 1.1rem;
+    font-weight: 700;
+    margin-bottom: 5px;
+    color: var(--text-color);
+}
+
+/* Challenges */
+.challenges-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+}
+
+.challenge-card {
+    background: var(--card-bg);
+    border: 1px solid var(--footer-border);
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px var(--card-shadow);
+}
+
+.challenge-card h3 {
+    margin-top: 0;
+    color: #d9534f;
+    /* Keep red for challenge as it is distinct, maybe adjust for dark mode later if too dark, but red usually works */
+    /* Slight red for challenge */
+    font-size: 1.2rem;
+}
