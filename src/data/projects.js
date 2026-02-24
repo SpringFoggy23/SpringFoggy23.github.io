@@ -29,6 +29,33 @@ const projects = [
             ]
         }
     },
+    {
+        id: "real-time-defect-detection",
+        title: "Real-Time Thermal Defect Detection",
+        subtitle: "Research Project - DEBS 2025",
+        description: "Improved a real-time defect detection system for laser powder bed fusion using Apache Kafka and Flink. Analyzed thermal grayscale images to identify saturated points and outliers, achieving 28× higher throughput and 7× lower latency than the baseline system implementation.",
+        image: "/images/2025MayCertificate.JPG",
+        images: ["/images/2025MayCertificate.JPG"],
+        tools: ["Apache Kafka", "Apache Flink", "Java"],
+        links: {
+            paper: "https://dl.acm.org/doi/10.1145/3701717.3735574",
+            contact: "mailto:zsliu@bu.edu"
+        },
+        details: {
+            timeline: [
+                { phase: "Research & Development", date: "Jan 2025 - May 2025", description: "System design, implementation, and performance analysis." },
+            ],
+            challenges: [
+                { title: "High Throughput Processing", description: "Handling high-frequency thermal image streams for real-time analysis." },
+                { title: "Latency Optimization", description: "Reducing system latency by 7x to enable immediate defect identification." },
+            ],
+            stack: [
+                { name: "Apache Flink", type: "Stream Processing" },
+                { name: "Apache Kafka", type: "Message Broker" },
+                { name: "Java", type: "Programming Language" },
+            ]
+        }
+    },
     // Add more projects here
 ];
 

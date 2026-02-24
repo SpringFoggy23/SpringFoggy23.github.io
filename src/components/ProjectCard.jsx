@@ -1,6 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import { Github, Globe, ArrowRight } from 'lucide-react';
+import { Github, Globe, ArrowRight, FileText } from 'lucide-react';
 import './ProjectCard.css';
 
 const ProjectCard = ({ id, title, description, image, tools, links }) => {
@@ -22,13 +22,18 @@ const ProjectCard = ({ id, title, description, image, tools, links }) => {
                 <div className="project-footer">
                     <div className="project-links">
                         {links.github && (
-                            <a href={links.github} target="_blank" rel="noopener noreferrer">
+                            <a href={links.github} target="_blank" rel="noopener noreferrer" title="View Code">
                                 <Github size={20} />
                             </a>
                         )}
                         {links.demo && (
-                            <a href={links.demo} target="_blank" rel="noopener noreferrer">
+                            <a href={links.demo} target="_blank" rel="noopener noreferrer" title="Live Demo">
                                 <Globe size={20} />
+                            </a>
+                        )}
+                        {links.paper && (
+                            <a href={links.paper} target="_blank" rel="noopener noreferrer" title="Read Paper">
+                                <FileText size={20} />
                             </a>
                         )}
                     </div>

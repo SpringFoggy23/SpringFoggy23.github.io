@@ -1,6 +1,6 @@
 import React, { useEffect } from 'react';
 import { useParams, Link } from 'react-router-dom';
-import { ArrowLeft, Github, Globe, Calendar, Layers, AlertTriangle } from 'lucide-react';
+import { ArrowLeft, Github, Globe, Calendar, Layers, AlertTriangle, FileText } from 'lucide-react';
 import projects from '../data/projects';
 import useDocumentTitle from '../hooks/useDocumentTitle';
 import './ProjectDetail.css';
@@ -37,6 +37,11 @@ const ProjectDetail = () => {
                 <p className="subtitle">{project.subtitle}</p>
 
                 <div className="project-meta">
+                    {project.links.paper && (
+                        <a href={project.links.paper} target="_blank" rel="noopener noreferrer" className="meta-link">
+                            <FileText size={20} /> Read Paper
+                        </a>
+                    )}
                     {project.links.github && (
                         <a href={project.links.github} target="_blank" rel="noopener noreferrer" className="meta-link">
                             <Github size={20} /> GitHub
