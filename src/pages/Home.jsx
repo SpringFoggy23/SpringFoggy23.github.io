@@ -1,10 +1,30 @@
-// import React from 'react';
-import { Github, Linkedin, Instagram, Mail, MapPin, Phone, Download, ExternalLink, Fingerprint } from 'lucide-react';
+import { useEffect, useState } from 'react';
+import { Github, Linkedin, Instagram, Mail, MapPin, Phone, Download, ExternalLink, Fingerprint, Eye } from 'lucide-react';
 import useDocumentTitle from '../hooks/useDocumentTitle';
+import ContactForm from '../components/ContactForm';
 import './Home.css';
 
 const Home = () => {
     useDocumentTitle('Home');
+    const [visitorCount, setVisitorCount] = useState(null);
+
+    useEffect(() => {
+        // Increment visitor count when the home page loads
+        const logVisit = async () => {
+            try {
+                const response = await fetch('https://visitor-api-953856592719.us-central1.run.app/api/visit');
+                if (response.ok) {
+                    const data = await response.json();
+                    setVisitorCount(data.visitors);
+                }
+            } catch (error) {
+                console.error("Visitor tracking is currently unavailable.");
+            }
+        };
+
+        logVisit();
+    }, []);
+
     return (
         <div className="resume-container">
             {/* Left Column: Profile, Skills, Contact, Education */}
@@ -43,6 +63,11 @@ const Home = () => {
                             <Instagram size={20} />
                         </a>
                     </div>
+                    {visitorCount !== null && (
+                        <div className="visitor-count" style={{ marginTop: '1rem', fontSize: '0.85rem', color: 'var(--text-secondary)', display: 'flex', alignItems: 'center', gap: '0.4rem', justifyContent: 'center' }}>
+                            <Eye size={14} /> Total Visitors: {visitorCount}
+                        </div>
+                    )}
                 </div>
 
                 <div className="sidebar-section">
@@ -92,13 +117,17 @@ const Home = () => {
                     </ul>
                 </div>
 
+                {/* 
                 <div className="sidebar-section">
                     <h2>Test Scores</h2>
                     <div className="test-item">
                         <strong>GRE:</strong> 322
                         <a href="/public/GRE_undergraduate.pdf" target="_blank" className="icon-link"><Download size={14} /></a>
                     </div>
-                </div>
+                </div> 
+                */}
+
+                <ContactForm />
             </aside>
 
             {/* Right Column: Experience, Research */}
