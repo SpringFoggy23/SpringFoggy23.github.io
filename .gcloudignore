@@ -1,0 +1,7 @@
+node_modules
+.DS_Store
+.env
+visitors.log
+visitor_details.log
+comments.log
+dist
