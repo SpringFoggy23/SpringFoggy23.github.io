@@ -1,6 +1,6 @@
 const projects = [
     {
-        id: "project-a",
+        id: "3D Print",
         title: "Computer Fabrication",
         subtitle: "Course Project - Emily Whiting",
         description: "A project exploring computational fabrication techniques, implemented using Blender for 3D modeling and Onshape for CAD design. This project focuses on the intersection of software and physical manufacturing.",
@@ -9,7 +9,6 @@ const projects = [
         tools: ["Blender", "Onshape"],
         links: {
             github: "https://github.com/SpringFoggy23",
-            demo: "https://yourdemo.com/projectA",
             contact: "mailto:zsliu@bu.edu"
         },
         details: {
@@ -53,6 +52,30 @@ const projects = [
                 { name: "Apache Flink", type: "Stream Processing" },
                 { name: "Apache Kafka", type: "Message Broker" },
                 { name: "Java", type: "Programming Language" },
+            ]
+        }
+    },
+     {
+        id: "ClubScoutSystem",
+        title: "ClubScoutSystem in Graph Theory and AI agent",
+        subtitle: "CS599 Advanced topics-John Byers",
+        description: "Developed an intelligent AI agent system leveraging OpenAI API to automate data processing pipeline.Start from scraping 450+ student club records from official website, performed data cleaning and keyword extraction, and constructed bipartite recommendation graphs linking users to clubs through semantic relationships. ",
+        image: "/images/agent_1.png",
+        images: ["/images/agent_2.png"],
+        images: ["/images/agent_3.png"],
+        tools: ["Python", "React", "Google cloud"],
+        links: {
+            paper: "https://clubscout.vercel.app/",
+            contact: "mailto:zsliu@bu.edu"
+        },
+        details: {
+            timeline: [
+                { phase: "Software Development & AI intergration", date: "Sep 2025 - Dec 2025", description: "System design, Database, and performance analysis." },
+            ],
+            stack: [
+                { name: "Openai", type: "AI agent depend on" },
+                { name: "Google cloud & FireStore", type: "Backend Deployment" },
+                { name: "Python", type: "Programming Language" },
             ]
         }
     },
